@@ -1,3 +1,7 @@
+if has('python3')
+endif
+let g:ycm_path_to_python_interpreter = '/usr/bin/python'
+
 set nocompatible              " non compatibile con vi
 filetype off                  " spegni il rilevamento automatico del tipo di file
 
@@ -48,7 +52,8 @@ Plugin 'Valloric/YouCompleteMe'
 call vundle#end()              " fine della configurazione Vundle
 filetype plugin indent on      " attiva il rilevamento automatico del tipo di file e i plugin
 
-" Lingua italiana
+
+
 set encoding=utf-8
 set termencoding=utf-8
 language messages it_IT.utf-8
